@@ -10,7 +10,7 @@
       <div class="content">
         <p><a href="{{ url_for('employer', employer_id=job['employer_id']) }}">
             {{ job['employer_name'] }}<br>
-            ${{ job['salary'] }}<br>
+            {{ job['salary'] }}<br>
             {{ job['description'] }}<br>
         </a></p>
       </div>

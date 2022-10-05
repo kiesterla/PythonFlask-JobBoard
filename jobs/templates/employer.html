@@ -7,6 +7,7 @@
     <p>{{ employer['description'] }}</p>
 </div>
 <h2>Jobs</h2>
+{{ show_jobs(jobs) }}
 <h2>Reviews</h2>
 
 {% for review in reviews %}
@@ -21,10 +22,10 @@
         <div class="media-content">
             <div class="content">
                 <p>
-                    <strong>{{ title }}</strong>     
-                    <small>{{ status }}</small>               
-                    <small>{{ date }}</small>
-                    {{ review }}
+                    <strong>{{review['title']}}</strong>     
+                    <small>{{review['status']}}</small>               
+                    <small>{{review['date']}}</small>
+                    {{review['review']}}
                 </p>
             </div>
         </div>
