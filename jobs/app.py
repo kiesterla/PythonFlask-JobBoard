@@ -1,6 +1,7 @@
 from multiprocessing import connection
 import sqlite3
-from flask import Flask, render_template, g, datetime, request, redirect, url_for
+from flask import Flask, render_template, g, request, redirect, url_for
+import datetime
 
 PATH = 'db/jobs.sqlite'
 
